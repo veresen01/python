@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.center {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 240px 19px 231px
+}
+    
+
+.left__menu {
+    display: flex;
+    gap: 41px;
+}
+
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.search:hover {
+    transform: scale(1.1);
+}
+
+.right__menu {
+    display: flex;
+    gap: 31px;
+}
+
+.menu:hover {
+    transform: scale(1.1);
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.basket:hover {
+    transform: scale(1.1);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F1E4E6;
+    margin-bottom: 65px;
+}
+
+.top__title {
+    display:flex;
+    align-items: center;
+    text-transform:uppercase;
+    margin-right: 331px;
+}
+
+.top__line {
+    margin-right: 16px;
+}
+
+.title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.subtitle {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.colored__text {
+    color: #F16D7F
+}
+
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 96px;
+}
+
+.offers__top {
+    display: flex;
+    gap: 30px;
+}
+
+.offer__item {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers__text {
+    position:absolute;
+    text-transform: uppercase;
+}
+
+.white__text {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.offer__link {
+    text-decoration: none;
+    color: #F16D7F;
+    font-size: 24px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.offer__link:hover {
+    color: #ee0827d0;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3,360px);
+    gap: 30px;
+    padding: 48px 230px
+}
+
+.content__title {
+    color: #222;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.content__subtitle {
+    color: #9F9F9F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+
+}
+
+.item__text {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.item__link {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item__link:hover {
+    color: #7d079bec;
+}
+
+.item__desc {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 315px;
+}
+
+.item__price {
+    color: #F16D7F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content__btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.btn {
+    color: #F26376;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    padding: 14px 39px 15px 39px;
+    background: #FFF;
+    border: 1px solid #F16D7F;
+}
+
+.btn:hover {
+    border: 1px solid fff;
+    color: #fff;
+    background-color:#F26376;
+    transition: all 0.2s;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+        .center {
+            width: 100%;
+        }
+    
+        .header{
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    
+        .left__menu {
+            margin-left: 32px;
+        }
+    
+        .right__menu {
+            margin-right: 32px;
+        }
+
+        .top {
+            padding-right: 33px;
+            margin-bottom: 65px;
+        }
+    
+        .photo {
+            min-width: 48%;
+        }
+        
+        .title {
+            font-size: 44px;
+            min-width: 283px;
+        }
+
+        .subtitle {
+            font-size:  24px;
+        }
+        
+    
+        .offers {
+            height: 303px;
+            gap: 20px;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-bottom: 110px;
+        }
+
+        .offer__img  {
+            max-width: 100%;
+        }
+
+        .content__header {
+            margin-bottom: 73px;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 16px;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-bottom: 33px;
+        }
+
+    }
+    
